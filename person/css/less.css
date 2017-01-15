@@ -1,0 +1,443 @@
+/*公共属性*/
+  body,
+  ul,
+  li,
+  h1,
+  p,
+  form,
+  input {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  a {
+      text-decoration: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+/*小屏的时候*/
+  .container {
+    width: 100%;
+    margin: auto;
+    /*margin-top:40px;*/
+  }
+  .container > .row {
+    width: 100%;
+  }
+  .container > .row:before,
+  .container > .row:after {
+    content: "";
+    display: block;
+  }
+  .container > .row:after {
+    clear: both;
+  }
+  .container-fluid {
+    width: 100%;
+    margin: auto;
+  }
+  .container-fluid > .row {
+    width: 100%;
+  }
+  .container-fluid > .row:before,
+  .container-fluid > .row:after {
+    content: "";
+    display: block;
+  }
+  .container-fluid > .row:after {
+    clear: both;
+  }
+  /*最小屏*/
+  .container > .row > .col-s-1 {
+    float: left;
+    width: 8.33333333%;
+  }
+  .container-fluid > .row > .col-s-1 {
+    float: left;
+    width: 8.33333333%;
+  }
+  .container > .row > .col-s-2 {
+    float: left;
+    width: 16.66666667%;
+  }
+  .container-fluid > .row > .col-s-2 {
+    float: left;
+    width: 16.66666667%;
+  }
+  .container > .row > .col-s-3 {
+    float: left;
+    width: 25%;
+  }
+  .container-fluid > .row > .col-s-3 {
+    float: left;
+    width: 25%;
+  }
+  .container > .row > .col-s-4 {
+    float: left;
+    width: 33.33333333%;
+  }
+  .container-fluid > .row > .col-s-4 {
+    float: left;
+    width: 33.33333333%;
+  }
+  .container > .row > .col-s-5 {
+    float: left;
+    width: 41.66666667%;
+  }
+  .container-fluid > .row > .col-s-5 {
+    float: left;
+    width: 41.66666667%;
+  }
+  .container > .row > .col-s-6 {
+    float: left;
+    width: 50%;
+  }
+  .container-fluid > .row > .col-s-6 {
+    float: left;
+    width: 50%;
+  }
+  .container > .row > .col-s-7 {
+    float: left;
+    width: 58.33333333%;
+  }
+  .container-fluid > .row > .col-s-7 {
+    float: left;
+    width: 58.33333333%;
+  }
+  .container > .row > .col-s-8 {
+    float: left;
+    width: 66.66666667%;
+  }
+  .container-fluid > .row > .col-s-8 {
+    float: left;
+    width: 66.66666667%;
+  }
+  .container > .row > .col-s-9 {
+    float: left;
+    width: 75%;
+  }
+  .container-fluid > .row > .col-s-9 {
+    float: left;
+    width: 75%;
+  }
+  .container > .row > .col-s-10 {
+    float: left;
+    width: 83.33333333%;
+  }
+  .container-fluid > .row > .col-s-10 {
+    float: left;
+    width: 83.33333333%;
+  }
+  .container > .row > .col-s-11 {
+    float: left;
+    width: 91.66666667%;
+  }
+  .container-fluid > .row > .col-s-11 {
+    float: left;
+    width: 91.66666667%;
+  }
+  .container > .row > .col-s-12 {
+    float: left;
+    width: 100%;
+  }
+  .container-fluid > .row > .col-s-12 {
+    float: left;
+    width: 100%;
+  }
+  .col-s-hide {
+    display: none;
+  }
+/*中屏*/
+@media screen and (min-width: 735px) {
+  /*banner部分*/
+    .personal-top{
+        right:15%;
+        top:10%;
+    }
+    .personal-bottom{
+        right:55%;
+        bottom:15%;
+        z-index:100;
+    }
+    .nav{
+      display:block;
+    }
+    .navtbox{
+            position:absolute;right:40px;top:60px;cursor:pointer;display:none;
+          }
+    .main{
+      width:735px;
+    }
+    .work2{
+       height:200px;background:url(../img/2.jpg);background-size:cover;box-sizing: border-box;padding-right:20px;
+    }
+    .work3{
+       height:200px;background:url(../img/3.jpg);background-size:cover;
+    }
+    .work4{
+       height:420px;background:url(../img/4.jpg);background-size:cover;
+    }
+    .work5{
+       height:200px;background:url(../img/5.jpg);background-size:cover;margin-top:-220px;
+    }
+    .work6{
+       height:200px;background:url(../img/2.jpg);background-size:cover;margin-top:-220px;margin-left:33.33333%;
+    }
+  /*栅格化*/
+    .container {
+      width: 100%;
+      margin: auto;
+    }
+    .container > .row > .col-m-1 {
+      float: left;
+      width: 8.33333333%;
+    }
+    .container-fluid > .row > .col-m-1 {
+      float: left;
+      width: 8.33333333%;
+    }
+    .container > .row > .col-m-2 {
+      float: left;
+      width: 16.66666667%;
+    }
+    .container-fluid > .row > .col-m-2 {
+      float: left;
+      width: 16.66666667%;
+    }
+    .container > .row > .col-m-3 {
+      float: left;
+      width: 25%;
+    }
+    .container-fluid > .row > .col-m-3 {
+      float: left;
+      width: 25%;
+    }
+    .container > .row > .col-m-4 {
+      float: left;
+      width: 33.33333333%;
+    }
+    .container-fluid > .row > .col-m-4 {
+      float: left;
+      width: 33.33333333%;
+    }
+    .container > .row > .col-m-5 {
+      float: left;
+      width: 41.66666667%;
+    }
+    .container-fluid > .row > .col-m-5 {
+      float: left;
+      width: 41.66666667%;
+    }
+    .container > .row > .col-m-6 {
+      float: left;
+      width: 50%;
+    }
+    .container-fluid > .row > .col-m-6 {
+      float: left;
+      width: 50%;
+    }
+    .container > .row > .col-m-7 {
+      float: left;
+      width: 58.33333333%;
+    }
+    .container-fluid > .row > .col-m-7 {
+      float: left;
+      width: 58.33333333%;
+    }
+    .container > .row > .col-m-8 {
+      float: left;
+      width: 66.66666667%;
+    }
+    .container-fluid > .row > .col-m-8 {
+      float: left;
+      width: 66.66666667%;
+    }
+    .container > .row > .col-m-9 {
+      float: left;
+      width: 75%;
+    }
+    .container-fluid > .row > .col-m-9 {
+      float: left;
+      width: 75%;
+    }
+    .container > .row > .col-m-10 {
+      float: left;
+      width: 83.33333333%;
+    }
+    .container-fluid > .row > .col-m-10 {
+      float: left;
+      width: 83.33333333%;
+    }
+    .container > .row > .col-m-11 {
+      float: left;
+      width: 91.66666667%;
+    }
+    .container-fluid > .row > .col-m-11 {
+      float: left;
+      width: 91.66666667%;
+    }
+    .container > .row > .col-m-12 {
+      float: left;
+      width: 100%;
+    }
+    .container-fluid > .row > .col-m-12 {
+      float: left;
+      width: 100%;
+    }
+    .col-s-hide {
+      display: block;
+    }
+    .col-l-hide {
+      display: block;
+    }
+    .col-m-hide {
+      display: none;
+    }
+}
+/*大屏*/
+@media screen and (min-width: 1100px) {
+  /*banner部分*/
+    .box{
+        width:1100px;
+
+    }
+    .personal-top{
+        right:15%;
+        top:10%;
+    }
+    .personal-bottom{
+        right:15%;
+        bottom:30%;
+    }
+    .nav{
+      display:block;
+    }
+    .navtbox{
+      position:absolute;right:40px;top:60px;cursor:pointer;display:none;
+    }
+    .main{
+      width:1075px;
+    }
+    .work4{
+       height:420px;background:url(../img/4.jpg);background-size:cover;
+    }
+    .work5{
+       height:200px;background:url(../img/5.jpg);background-size:cover;margin-top:-220px;
+    }
+    .work6{
+       height:200px;background:url(../img/2.jpg);background-size:cover;margin-top:-220px;margin-left:33.33333%;
+    }
+  /*栅格化*/
+    .container {
+      width: 1075px;
+      margin: auto;
+    }
+    .container > .row > .col-l-1 {
+      float: left;
+      width: 8.33333333%;
+    }
+    .container-fluid > .row > .col-l-1 {
+      float: left;
+      width: 8.33333333%;
+    }
+    .container > .row > .col-l-2 {
+      float: left;
+      width: 16.66666667%;
+    }
+    .container-fluid > .row > .col-l-2 {
+      float: left;
+      width: 16.66666667%;
+    }
+    .container > .row > .col-l-3 {
+      float: left;
+      width: 25%;
+    }
+    .container-fluid > .row > .col-l-3 {
+      float: left;
+      width: 25%;
+    }
+    .container > .row > .col-l-4 {
+      float: left;
+      width: 33.33333333%;
+    }
+    .container-fluid > .row > .col-l-4 {
+      float: left;
+      width: 33.33333333%;
+    }
+    .container > .row > .col-l-5 {
+      float: left;
+      width: 41.66666667%;
+    }
+    .container-fluid > .row > .col-l-5 {
+      float: left;
+      width: 41.66666667%;
+    }
+    .container > .row > .col-l-6 {
+      float: left;
+      width: 50%;
+    }
+    .container-fluid > .row > .col-l-6 {
+      float: left;
+      width: 50%;
+    }
+    .container > .row > .col-l-7 {
+      float: left;
+      width: 58.33333333%;
+    }
+    .container-fluid > .row > .col-l-7 {
+      float: left;
+      width: 58.33333333%;
+    }
+    .container > .row > .col-l-8 {
+      float: left;
+      width: 66.66666667%;
+    }
+    .container-fluid > .row > .col-l-8 {
+      float: left;
+      width: 66.66666667%;
+    }
+    .container > .row > .col-l-9 {
+      float: left;
+      width: 75%;
+    }
+    .container-fluid > .row > .col-l-9 {
+      float: left;
+      width: 75%;
+    }
+    .container > .row > .col-l-10 {
+      float: left;
+      width: 83.33333333%;
+    }
+    .container-fluid > .row > .col-l-10 {
+      float: left;
+      width: 83.33333333%;
+    }
+    .container > .row > .col-l-11 {
+      float: left;
+      width: 91.66666667%;
+    }
+    .container-fluid > .row > .col-l-11 {
+      float: left;
+      width: 91.66666667%;
+    }
+    .container > .row > .col-l-12 {
+      float: left;
+      width: 100%;
+    }
+    .container-fluid > .row > .col-l-12 {
+      float: left;
+      width: 100%;
+    }
+    .col-s-hide {
+      display: block;
+    }
+    .col-m-hide {
+      display: block;
+    }
+    .col-l-hide {
+      display: block;
+    }
+}
+/*清除浮动*/
